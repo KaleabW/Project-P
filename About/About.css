@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+/*::-webkit-scrollbar{
+    display: none;
+}
+::-webkit-scrollbar:hover{
+}*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/*.H{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+} */
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(22, 131, 1);
+    text-decoration: underline;
+}
+nav ul i{
+    border-radius: 4px;
+    background: black;
+    color: white;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 3px;
+    transition: 1s;
+    cursor: pointer;
+}
+#menu-icons{
+    display: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    align-items: center;
+    margin: 7px 2px;
+    padding: 8px 6px;
+    transition: 1s;
+    cursor: pointer;
+}
+#menu-icons:hover{
+    color: black;
+    background: white;
+    transform: rotate(360deg);
+}
+nav ul i:hover{
+    color: black;
+    background: white;
+    transform: rotate(360deg);
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+.logo a span{
+    color: rgb(200, 17, 17);
+}
+.logo a:hover{
+    color: rgb(22, 131, 1);
+}
+main{
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 40px;
+    margin: 13px;
+}
+main h2{
+    color: rgb(39, 28, 28);
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+}
+main h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+}
+main h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+main h2:hover{
+    color: rgb(22, 131, 1);
+}
+main h3{
+    font-size: 23px;
+}
+main span{
+    color: rgb(200, 17, 17);
+}
+main span:hover{
+    color: rgb(22, 131, 1);
+}
+section{
+    padding-top: 30px;
+}
+.info{
+    float: left;
+    padding: 25px;
+    padding-top: 30px;
+}
+.info2{
+    float: left;
+    padding: 25px;
+    padding-top: 30px;
+}
+.info h5{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 40px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+.info h5:hover{
+    text-decoration: underline 2px solid;
+    color: rgb(22, 131, 1);
+}
+.info2 h5{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.info2 h5:hover{
+    color: rgb(22, 131, 7);
+    text-decoration: underline 2px solid;
+}
+.info h5 a{
+    text-decoration: none;
+    color: black;
+}
+.info2 h5 a:hover{
+    color: rgb(22, 131, 7);
+    text-decoration: underline solid 2px;
+}
+.info3{
+    width: 47%;
+    top: 10%;
+    left: 50%;
+    /*transform: translate(-50%,-50%);*/
+    /*position: absolute;*/
+    padding: 25px;
+    background: #333;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.5);
+    float: left;
+
+}
+.info3 h1{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.skillbox{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+}
+.skillbox p{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.skillbox p:nth-child(2){
+    float: right;
+    position: relative;
+    top: -25px;
+}
+.skill{
+    background: #262626;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #0fffb7;
+    border-radius: 2px;
+}
+.skill-level{
+    background: #0fffb7;
+    width: 100%;
+    height: 10px;
+}
+/*.P{
+    background: whitesmoke;
+}
+.P .portfolio-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.P .portfolio-heading h2{
+    color: black;
+    font-weight: 500;
+}
+.P .Container{
+    padding-bottom: 40px;
+}
+.P .portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.P .portfolio-item-inner{
+    border: 6px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.P .portfolio-item-inner .portfolio-img{
+    width: 100%;
+    display: block;
+}*/

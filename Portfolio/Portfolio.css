@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: whitesmoke;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: rgb(22, 131, 1);
+    text-decoration: underline;
+}
+nav ul i{
+    border-radius: 4px;
+    background: black;
+    color: white;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 3px;
+    transition: 1s;
+    cursor: pointer;
+}
+#menu-icons{
+    display: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    align-items: center;
+    margin: 7px 2px;
+    padding: 8px 6px;
+    transition: 1s;
+    cursor: pointer;
+}
+#menu-icons:hover{
+    color: black;
+    background: white;
+    transform: rotate(360deg);
+}
+nav ul i:hover{
+    color: black;
+    background: white;
+    transform: rotate(360deg);
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+.logo a span{
+    color: rgb(200, 17, 17);
+}
+.logo a:hover{
+    color: rgb(22, 131, 1);
+}
+main{
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 40px;
+    margin: 13px;
+}
+main h2{
+    color: rgb(39, 28, 28);
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+}
+main h2::before{
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+main h2::after{
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: red;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+main h2:hover{
+    color: rgb(22, 131, 1);
+}
+main h3{
+    font-size: 23px;
+}
+main span{
+    color: rgb(200, 17, 17);
+}
+main span:hover{
+    color: rgb(22, 131, 1);
+}
